@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/letterboxd
+    username: root
+    password: zahra2003
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
+    database: mysql
+
+
+application:
+  security:
+    jwt:
+      secret-key: kmj8bdWBB5NXh9qF5kAPS4psWj0GpH/OlDw7pYnhfDY+yCm0zyD0bErOMO2SHeZHaj2odPIHArkxNn11lTieeC25E7GhXm6G+wojqnOCNajyqoQF7RjtXEm/ADEU+AVh/utzf/M6nux4GBowO5lTj8z7HBK3f9fQIiFjdqP1w89fSlROzJdzjE91WRgLczgBzm8Ih1aFst8IzZz3JJzRTKwanJyzn9wDfq07GAU38OlBjrXjAQYTre0BBrT42EAiIUD/Xd8owx8cUwrPmj49SMSkSmJXV1Sdhngmyjp3nfifT919Los14zhioIFWJ0Radhad9FIKamlsOv0FkOO37x5sYLo2iZQ38l2dMJPOkg8=
+
+
+firebase:
+  storage:
+    gs: "gs://"
+    bucket-name: "letterboxd-project-75a2c.appspot.com"
+    cast-and-crew-folder: "cast-and-crew-photos"
